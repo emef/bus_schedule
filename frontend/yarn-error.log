@@ -1,0 +1,48 @@
+Arguments: 
+  /opt/twitter_mde/package/nodejs/b7c2b80f58d1d2481dbda9cc3fd274ae5505edfa9b53d88533f4a757fa03272f/bin/node /opt/twitter_mde/package/yarn/d164042f57ca0f38b9d7cb6f12be685c7f68282cfdc2d8363612717f88844cc3/bin/yarn.js
+
+PATH: 
+  /opt/twitter_mde/bin:/opt/twitter_mde/homebrew_minimal/mde_bin:/opt/twitter_mde/homebrew/mde_bin:/Users/mforbes/.tools-cache/home/aurora/tools/dottools/bin:/Users/mforbes/.tools-cache/home/capesospy/capesospy-v2/bin:/Users/mforbes/.tools-cache/home/aurora/tools/client/bin:/Users/mforbes/.tools-cache/home/packer/tools/packer/bin:/Users/mforbes/.tools-cache/home/aurora/tools/client/bin:/usr/local/cuda/bin:/Users/mforbes/bin:/Developer/NVIDIA/CUDA-6.5/bin:/Users/mforbes/src/tellapart/tools/bin:/Users/mforbes/src/go/bin:/usr/local/go/bin:/Users/mforbes/src/arcanist/bin:/Applications/Kaleidoscope.app/Contents/Resources/bin:/opt/local/lib/maven/bin:/opt/local/lib/mysql56/bin:/Users/mforbes/.cargo/bin:/usr/local/cuda/bin:/Users/mforbes/dev/tellapart/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Users/mforbes/dev/tellapart/tools/bin:/opt/local/bin:/opt/local/sbin:/Users/mforbes/anaconda3/bin:/Users/mforbes/.rvm/bin:/opt/twitter_mde/data/node/bin:/Users/mforbes/.npm-global/bin
+
+Yarn version: 
+  0.23.3
+
+Node version: 
+  6.10.2
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "bus-schedule-frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "react": "^15.6.1",
+      "react-dom": "^15.6.1",
+      "react-native-web": "^0.0.113",
+      "react-redux": "^5.0.5",
+      "react-scripts": "1.0.10",
+      "redux": "^3.7.2"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    },
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND artifactory.twitter.biz artifactory.twitter.biz:443
+      at errnoException (dns.js:28:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)

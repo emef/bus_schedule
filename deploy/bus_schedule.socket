@@ -1,0 +1,8 @@
+[Unit]
+Description=bus_schedule gunicorn socket
+
+[Socket]
+ListenStream=/run/bus_schedule/socket
+
+[Install]
+WantedBy=sockets.target

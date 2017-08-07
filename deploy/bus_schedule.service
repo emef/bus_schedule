@@ -1,0 +1,18 @@
+[Unit]
+Description=bus_schedule gunicorn http service
+Requires=bus_schedule.socket
+After=network.target
+
+[Service]
+PIDFile=/run/bus_schedule/pid
+User=bus_schedule
+Group=bus_schedule
+WorkingDirectory=/opt/bus_schedule
+ExecStart=/opt/virtualenv/bus_schedule/bin/gunicorn --pid /run/bus_schedule/pid   \
+          --bind unix:/run/bus_schedule/socket bus_schedule:app
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
